@@ -1,0 +1,75 @@
+<PISI>
+    <Source>
+        <Name>pantheon-files</Name>
+        <Packager>
+            <Name>Sebastian Würl</Name>
+            <Email>bastiwuerl@gmail.com</Email>
+        </Packager>
+        <License>GPL-3.0</License>
+        <PartOf>desktop</PartOf>
+        <Summary xml:lang="en">The simple, powerful, and sexy file manager from elementary</Summary>
+        <Description xml:lang="en">The simple, powerful, and sexy file manager from elementary
+</Description>
+        <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://solus-project.com/sources/README.Solus</Archive>
+    </Source>
+    <Package>
+        <Name>pantheon-files</Name>
+        <Summary xml:lang="en">The simple, powerful, and sexy file manager from elementary</Summary>
+        <Description xml:lang="en">The simple, powerful, and sexy file manager from elementary
+</Description>
+        <PartOf>desktop</PartOf>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib64/gtk-3.0/modules/libpantheon-filechooser-module.so</Path>
+            <Path fileType="library">/usr/lib64/lib*.so.*</Path>
+            <Path fileType="library">/usr/lib64/pantheon-files/plugins/core/contractor.plug</Path>
+            <Path fileType="library">/usr/lib64/pantheon-files/plugins/core/libnetwork-places.so</Path>
+            <Path fileType="library">/usr/lib64/pantheon-files/plugins/core/libpantheon-files-contractor.so</Path>
+            <Path fileType="library">/usr/lib64/pantheon-files/plugins/core/libpantheon-filesctags.so</Path>
+            <Path fileType="library">/usr/lib64/pantheon-files/plugins/core/libpantheon-filestrash.so</Path>
+            <Path fileType="library">/usr/lib64/pantheon-files/plugins/core/network-places.plug</Path>
+            <Path fileType="library">/usr/lib64/pantheon-files/plugins/core/pantheon-files-ctags.plug</Path>
+            <Path fileType="library">/usr/lib64/pantheon-files/plugins/core/pantheon-files-trash.plug</Path>
+            <Path fileType="data">/usr/share/appdata/org.pantheon.files.appdata.xml</Path>
+            <Path fileType="data">/usr/share/applications/org.pantheon.files.desktop</Path>
+            <Path fileType="data">/usr/share/dbus-1/services/pantheon-files.service</Path>
+            <Path fileType="data">/usr/share/glib-2.0/schemas/org.pantheon.files.gschema.xml</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/16x16/actions/selection-add.svg</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/16x16/actions/selection-checked.svg</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/16x16/actions/selection-remove.svg</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/24x24/actions/selection-add.svg</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/24x24/actions/selection-checked.svg</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/24x24/actions/selection-remove.svg</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
+            <Path fileType="data">/usr/share/pantheon-files</Path>
+            <Path fileType="data">/usr/share/pixmaps/pantheon-files/poof.png</Path>
+            <Path fileType="data">/usr/share/pixmaps/pantheon-files/thumbnail_frame.png</Path>
+            <Path fileType="data">/usr/share/polkit-1/actions/net.launchpad.pantheon-files.policy.xml</Path>
+        </Files>
+    </Package>
+    <Package>
+        <Name>pantheon-files-devel</Name>
+        <Summary xml:lang="en">Development files for pantheon-files</Summary>
+        <Description xml:lang="en">The simple, powerful, and sexy file manager from elementary
+</Description>
+        <PartOf>programming.devel</PartOf>
+        <RuntimeDependencies>
+            <Dependency release="1">pantheon-files</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="header">/usr/include/</Path>
+            <Path fileType="library">/usr/lib64/lib*.so</Path>
+            <Path fileType="data">/usr/lib64/pkgconfig/*.pc</Path>
+            <Path fileType="data">/usr/share/vala*/vapi/*</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2017-03-01</Date>
+            <Version>0.3.2</Version>
+            <Comment>Packaging update</Comment>
+            <Name>Sebastian Würl</Name>
+            <Email>bastiwuerl@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

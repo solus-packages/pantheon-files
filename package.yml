@@ -1,0 +1,32 @@
+name       : pantheon-files
+version    : 0.3.2
+release    : 1
+source     :
+    - https://launchpad.net/pantheon-files/0.3.x/0.3.2/+download/pantheon-files-0.3.2.tar.xz : d2553be0819ba8240aa0888bfc984054e4f8a8e4dbcbf07a935f6eb06b1b4263
+license    : GPL-3.0
+summary    : The simple, powerful, and sexy file manager from elementary
+builddeps  :
+    - pkgconfig(dbus-glib-1)
+    - pkgconfig(granite)
+    - pkgconfig(gail-3.0)
+    - pkgconfig(libcanberra)
+    - pkgconfig(sqlite3)
+    - pkgconfig(zeitgeist-2.0)
+    - vala
+component  : desktop
+description: |
+    The simple, powerful, and sexy file manager from elementary
+setup      : |
+    %cmake .
+build      : |
+    %make
+install    : |
+    # install select icons missing from most icon packs
+    for i in $pkgfiles/16x16/actions/*; do
+        install -Dm 00644 $i $installdir/usr/share/icons/hicolor/16x16/actions/${i##*/}
+    done;
+    for i in $pkgfiles/24x24/actions/*; do
+        install -Dm 00644 $i $installdir/usr/share/icons/hicolor/24x24/actions/${i##*/}
+    done;
+
+    %make_install
