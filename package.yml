@@ -4,7 +4,10 @@ release    : 1
 source     :
     - https://launchpad.net/pantheon-files/0.3.x/0.3.2/+download/pantheon-files-0.3.2.tar.xz : d2553be0819ba8240aa0888bfc984054e4f8a8e4dbcbf07a935f6eb06b1b4263
 license    : GPL-3.0
+component  : desktop
 summary    : The simple, powerful, and sexy file manager from elementary
+description: |
+    The simple, powerful, and sexy file manager from elementary
 builddeps  :
     - pkgconfig(dbus-glib-1)
     - pkgconfig(granite)
@@ -13,9 +16,6 @@ builddeps  :
     - pkgconfig(sqlite3)
     - pkgconfig(zeitgeist-2.0)
     - vala
-component  : desktop
-description: |
-    The simple, powerful, and sexy file manager from elementary
 setup      : |
     %cmake .
 build      : |
