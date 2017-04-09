@@ -2,8 +2,8 @@
     <Source>
         <Name>pantheon-files</Name>
         <Packager>
-            <Name>Sebastian Würl</Name>
-            <Email>bastiwuerl@gmail.com</Email>
+            <Name>Joshua Strobl</Name>
+            <Email>joshua@stroblindustries.com</Email>
         </Packager>
         <License>GPL-3.0</License>
         <PartOf>desktop</PartOf>
@@ -54,7 +54,7 @@
 </Description>
         <PartOf>programming.devel</PartOf>
         <RuntimeDependencies>
-            <Dependency release="1">pantheon-files</Dependency>
+            <Dependency release="2">pantheon-files</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include/</Path>
@@ -64,12 +64,12 @@
         </Files>
     </Package>
     <History>
-        <Update release="1">
-            <Date>2017-03-01</Date>
+        <Update release="2">
+            <Date>2017-04-09</Date>
             <Version>0.3.2</Version>
             <Comment>Packaging update</Comment>
-            <Name>Sebastian Würl</Name>
-            <Email>bastiwuerl@gmail.com</Email>
+            <Name>Joshua Strobl</Name>
+            <Email>joshua@stroblindustries.com</Email>
         </Update>
     </History>
 </PISI>

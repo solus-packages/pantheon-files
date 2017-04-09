@@ -1,6 +1,6 @@
 name       : pantheon-files
 version    : 0.3.2
-release    : 1
+release    : 2
 source     :
     - https://launchpad.net/pantheon-files/0.3.x/0.3.2/+download/pantheon-files-0.3.2.tar.xz : d2553be0819ba8240aa0888bfc984054e4f8a8e4dbcbf07a935f6eb06b1b4263
 license    : GPL-3.0
