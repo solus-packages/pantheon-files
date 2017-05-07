@@ -152,12 +152,14 @@ libpantheon-files-core.so.0:gof_directory_async_get_is_network
 libpantheon-files-core.so.0:gof_directory_async_get_is_no_info
 libpantheon-files-core.so.0:gof_directory_async_get_is_recent
 libpantheon-files-core.so.0:gof_directory_async_get_is_trash
+libpantheon-files-core.so.0:gof_directory_async_get_last_error_message
 libpantheon-files-core.so.0:gof_directory_async_get_parent
 libpantheon-files-core.so.0:gof_directory_async_get_scheme
 libpantheon-files-core.so.0:gof_directory_async_get_sorted_dirs
 libpantheon-files-core.so.0:gof_directory_async_get_state
 libpantheon-files-core.so.0:gof_directory_async_get_type
 libpantheon-files-core.so.0:gof_directory_async_has_parent
+libpantheon-files-core.so.0:gof_directory_async_has_timed_out
 libpantheon-files-core.so.0:gof_directory_async_init
 libpantheon-files-core.so.0:gof_directory_async_is_empty
 libpantheon-files-core.so.0:gof_directory_async_is_loaded
@@ -455,10 +457,12 @@ libpantheon-files-core.so.0:marlin_zoom_level_to_stock_icon_size
 libpantheon-files-core.so.0:pf_file_utils_can_browse_scheme
 libpantheon-files-core.so.0:pf_file_utils_construct_parent_path
 libpantheon-files-core.so.0:pf_file_utils_escape_uri
+libpantheon-files-core.so.0:pf_file_utils_get_default_port_for_protocol
 libpantheon-files-core.so.0:pf_file_utils_get_file_for_path
 libpantheon-files-core.so.0:pf_file_utils_get_formatted_date_time
 libpantheon-files-core.so.0:pf_file_utils_get_formatted_time_attribute_from_info
 libpantheon-files-core.so.0:pf_file_utils_get_informal_date_time
+libpantheon-files-core.so.0:pf_file_utils_get_is_tls_for_protocol
 libpantheon-files-core.so.0:pf_file_utils_get_parent_path_from_path
 libpantheon-files-core.so.0:pf_file_utils_get_smb_share_from_uri
 libpantheon-files-core.so.0:pf_file_utils_get_trashed_file_original_folder

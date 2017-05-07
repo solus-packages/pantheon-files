@@ -1,8 +1,8 @@
 name       : pantheon-files
-version    : 0.3.2
-release    : 2
+version    : 0.3.4
+release    : 3
 source     :
-    - https://launchpad.net/pantheon-files/0.3.x/0.3.2/+download/pantheon-files-0.3.2.tar.xz : d2553be0819ba8240aa0888bfc984054e4f8a8e4dbcbf07a935f6eb06b1b4263
+    - https://launchpad.net/pantheon-files/0.3.x/0.3.4/+download/pantheon-files-0.3.4.tar.xz : 93b62388aea58deda0b288eb54dedc73b1cd6cefbce0f2bc516f9bb18715e744
 license    : GPL-3.0
 component  : desktop
 summary    : The simple, powerful, and sexy file manager from elementary
@@ -15,6 +15,7 @@ builddeps  :
     - pkgconfig(libcanberra)
     - pkgconfig(sqlite3)
     - pkgconfig(zeitgeist-2.0)
+    - pkgconfig(libnotify)
     - vala
 setup      : |
     %cmake .

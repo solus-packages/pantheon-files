@@ -2,8 +2,8 @@
     <Source>
         <Name>pantheon-files</Name>
         <Packager>
-            <Name>Joshua Strobl</Name>
-            <Email>joshua@stroblindustries.com</Email>
+            <Name>Sebastian Würl</Name>
+            <Email>bastiwuerl@gmail.com</Email>
         </Packager>
         <License>GPL-3.0</License>
         <PartOf>desktop</PartOf>
@@ -44,7 +44,7 @@
             <Path fileType="data">/usr/share/pantheon-files</Path>
             <Path fileType="data">/usr/share/pixmaps/pantheon-files/poof.png</Path>
             <Path fileType="data">/usr/share/pixmaps/pantheon-files/thumbnail_frame.png</Path>
-            <Path fileType="data">/usr/share/polkit-1/actions/net.launchpad.pantheon-files.policy.xml</Path>
+            <Path fileType="data">/usr/share/polkit-1/actions/net.launchpad.pantheon-files.policy</Path>
         </Files>
     </Package>
     <Package>
@@ -54,7 +54,7 @@
 </Description>
         <PartOf>programming.devel</PartOf>
         <RuntimeDependencies>
-            <Dependency release="2">pantheon-files</Dependency>
+            <Dependency release="3">pantheon-files</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include/</Path>
@@ -64,12 +64,12 @@
         </Files>
     </Package>
     <History>
-        <Update release="2">
-            <Date>2017-04-09</Date>
-            <Version>0.3.2</Version>
+        <Update release="3">
+            <Date>2017-05-07</Date>
+            <Version>0.3.4</Version>
             <Comment>Packaging update</Comment>
-            <Name>Joshua Strobl</Name>
-            <Email>joshua@stroblindustries.com</Email>
+            <Name>Sebastian Würl</Name>
+            <Email>bastiwuerl@gmail.com</Email>
         </Update>
     </History>
 </PISI>
