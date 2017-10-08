@@ -1,8 +1,8 @@
 name       : pantheon-files
-version    : 0.3.4
-release    : 3
+version    : 0.3.5
+release    : 4
 source     :
-    - https://launchpad.net/pantheon-files/0.3.x/0.3.4/+download/pantheon-files-0.3.4.tar.xz : 93b62388aea58deda0b288eb54dedc73b1cd6cefbce0f2bc516f9bb18715e744
+    - https://launchpad.net/pantheon-files/0.3.x/0.3.5/+download/pantheon-files-0.3.5.tar.xz : fd58b00ea3ad835d62f248a982e508b5199b846d67c5d92bf958e85e670f8a7e
 license    : GPL-3.0
 component  : desktop
 summary    : The simple, powerful, and sexy file manager from elementary

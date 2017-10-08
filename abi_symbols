@@ -155,6 +155,7 @@ libpantheon-files-core.so.0:gof_directory_async_get_is_trash
 libpantheon-files-core.so.0:gof_directory_async_get_last_error_message
 libpantheon-files-core.so.0:gof_directory_async_get_parent
 libpantheon-files-core.so.0:gof_directory_async_get_scheme
+libpantheon-files-core.so.0:gof_directory_async_get_selected_file
 libpantheon-files-core.so.0:gof_directory_async_get_sorted_dirs
 libpantheon-files-core.so.0:gof_directory_async_get_state
 libpantheon-files-core.so.0:gof_directory_async_get_type
@@ -255,6 +256,7 @@ libpantheon-files-core.so.0:gof_file_update_trash_info
 libpantheon-files-core.so.0:gof_file_update_type
 libpantheon-files-core.so.0:gof_files_get_location_list
 libpantheon-files-core.so.0:gof_preferences_construct
+libpantheon-files-core.so.0:gof_preferences_get_clock_format
 libpantheon-files-core.so.0:gof_preferences_get_confirm_trash
 libpantheon-files-core.so.0:gof_preferences_get_date_format
 libpantheon-files-core.so.0:gof_preferences_get_default
@@ -263,6 +265,7 @@ libpantheon-files-core.so.0:gof_preferences_get_show_hidden_files
 libpantheon-files-core.so.0:gof_preferences_get_show_remote_thumbnails
 libpantheon-files-core.so.0:gof_preferences_get_type
 libpantheon-files-core.so.0:gof_preferences_new
+libpantheon-files-core.so.0:gof_preferences_set_clock_format
 libpantheon-files-core.so.0:gof_preferences_set_confirm_trash
 libpantheon-files-core.so.0:gof_preferences_set_date_format
 libpantheon-files-core.so.0:gof_preferences_set_force_icon_size
