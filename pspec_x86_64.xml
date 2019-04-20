@@ -2,15 +2,15 @@
     <Source>
         <Name>pantheon-files</Name>
         <Packager>
-            <Name>Bryan T. Meyers</Name>
-            <Email>bmeyers@datadrake.com</Email>
+            <Name>Joshua Strobl</Name>
+            <Email>joshua@stroblindustries.com</Email>
         </Packager>
         <License>GPL-3.0-or-later</License>
         <PartOf>desktop</PartOf>
         <Summary xml:lang="en">The simple, powerful, and sexy file manager from elementary</Summary>
         <Description xml:lang="en">The simple, powerful, and sexy file manager from elementary
 </Description>
-        <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://solus-project.com/sources/README.Solus</Archive>
+        <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://getsol.us/sources/README.Solus</Archive>
     </Source>
     <Package>
         <Name>pantheon-files</Name>
@@ -23,20 +23,18 @@
             <Path fileType="executable">/usr/bin/io.elementary.files-daemon</Path>
             <Path fileType="executable">/usr/bin/io.elementary.files-pkexec</Path>
             <Path fileType="library">/usr/lib64/gtk-3.0/modules/libpantheon-filechooser-module.so</Path>
-            <Path fileType="library">/usr/lib64/io.elementary.files/plugins/core/contractor.plug</Path>
-            <Path fileType="library">/usr/lib64/io.elementary.files/plugins/core/libnetwork-places.so</Path>
             <Path fileType="library">/usr/lib64/io.elementary.files/plugins/core/libpantheon-files-contractor.so</Path>
-            <Path fileType="library">/usr/lib64/io.elementary.files/plugins/core/libpantheon-filesctags.so</Path>
-            <Path fileType="library">/usr/lib64/io.elementary.files/plugins/core/libpantheon-filestrash.so</Path>
-            <Path fileType="library">/usr/lib64/io.elementary.files/plugins/core/network-places.plug</Path>
+            <Path fileType="library">/usr/lib64/io.elementary.files/plugins/core/libpantheon-files-ctags.so</Path>
+            <Path fileType="library">/usr/lib64/io.elementary.files/plugins/core/libpantheon-files-trash.so</Path>
+            <Path fileType="library">/usr/lib64/io.elementary.files/plugins/core/pantheon-files-contractor.plug</Path>
             <Path fileType="library">/usr/lib64/io.elementary.files/plugins/core/pantheon-files-ctags.plug</Path>
             <Path fileType="library">/usr/lib64/io.elementary.files/plugins/core/pantheon-files-trash.plug</Path>
-            <Path fileType="library">/usr/lib64/libpantheon-files-core.so.0</Path>
-            <Path fileType="library">/usr/lib64/libpantheon-files-core.so.0.1</Path>
-            <Path fileType="library">/usr/lib64/libpantheon-files-widgets.so.0</Path>
-            <Path fileType="library">/usr/lib64/libpantheon-files-widgets.so.0.1</Path>
+            <Path fileType="library">/usr/lib64/libpantheon-files-core.so.4</Path>
+            <Path fileType="library">/usr/lib64/libpantheon-files-core.so.4.1.7</Path>
+            <Path fileType="library">/usr/lib64/libpantheon-files-widgets.so.4</Path>
+            <Path fileType="library">/usr/lib64/libpantheon-files-widgets.so.4.1.7</Path>
             <Path fileType="data">/usr/share/applications/io.elementary.files.desktop</Path>
-            <Path fileType="data">/usr/share/dbus-1/services/io.elementary.files.FileManager1.service</Path>
+            <Path fileType="data">/usr/share/dbus-1/services/io.elementary.files.Filemanager1.service</Path>
             <Path fileType="data">/usr/share/dbus-1/services/io.elementary.files.service</Path>
             <Path fileType="data">/usr/share/glib-2.0/schemas/io.elementary.files.gschema.xml</Path>
             <Path fileType="data">/usr/share/icons/hicolor/16x16/actions/selection-add.svg</Path>
@@ -126,7 +124,6 @@
             <Path fileType="localedata">/usr/share/locale/it/LC_MESSAGES/io.elementary.files.mo</Path>
             <Path fileType="localedata">/usr/share/locale/iu/LC_MESSAGES/io.elementary.files.mo</Path>
             <Path fileType="localedata">/usr/share/locale/ja/LC_MESSAGES/io.elementary.files.mo</Path>
-            <Path fileType="localedata">/usr/share/locale/jbo/LC_MESSAGES/io.elementary.files.mo</Path>
             <Path fileType="localedata">/usr/share/locale/jv/LC_MESSAGES/io.elementary.files.mo</Path>
             <Path fileType="localedata">/usr/share/locale/ka/LC_MESSAGES/io.elementary.files.mo</Path>
             <Path fileType="localedata">/usr/share/locale/kg/LC_MESSAGES/io.elementary.files.mo</Path>
@@ -206,7 +203,6 @@
             <Path fileType="localedata">/usr/share/locale/so/LC_MESSAGES/io.elementary.files.mo</Path>
             <Path fileType="localedata">/usr/share/locale/sq/LC_MESSAGES/io.elementary.files.mo</Path>
             <Path fileType="localedata">/usr/share/locale/sr/LC_MESSAGES/io.elementary.files.mo</Path>
-            <Path fileType="localedata">/usr/share/locale/sr@latin/LC_MESSAGES/io.elementary.files.mo</Path>
             <Path fileType="localedata">/usr/share/locale/ss/LC_MESSAGES/io.elementary.files.mo</Path>
             <Path fileType="localedata">/usr/share/locale/st/LC_MESSAGES/io.elementary.files.mo</Path>
             <Path fileType="localedata">/usr/share/locale/su/LC_MESSAGES/io.elementary.files.mo</Path>
@@ -246,7 +242,6 @@
             <Path fileType="localedata">/usr/share/locale/zu/LC_MESSAGES/io.elementary.files.mo</Path>
             <Path fileType="data">/usr/share/metainfo/io.elementary.files.appdata.xml</Path>
             <Path fileType="data">/usr/share/pixmaps/io.elementary.files/poof.png</Path>
-            <Path fileType="data">/usr/share/pixmaps/io.elementary.files/thumbnail_frame.png</Path>
             <Path fileType="data">/usr/share/polkit-1/actions/io.elementary.files.policy</Path>
         </Files>
     </Package>
@@ -257,37 +252,31 @@
 </Description>
         <PartOf>programming.devel</PartOf>
         <RuntimeDependencies>
-            <Dependency release="8">pantheon-files</Dependency>
+            <Dependency release="9">pantheon-files</Dependency>
         </RuntimeDependencies>
         <Files>
-            <Path fileType="header">/usr/include/pantheon-files-core/eel-stock-dialogs.h</Path>
             <Path fileType="header">/usr/include/pantheon-files-core/eel-string.h</Path>
             <Path fileType="header">/usr/include/pantheon-files-core/fm-list-model.h</Path>
-            <Path fileType="header">/usr/include/pantheon-files-core/gof-file.h</Path>
             <Path fileType="header">/usr/include/pantheon-files-core/marlin-file-changes-queue.h</Path>
             <Path fileType="header">/usr/include/pantheon-files-core/marlin-file-operations.h</Path>
-            <Path fileType="header">/usr/include/pantheon-files-core/marlin-icons.h</Path>
             <Path fileType="header">/usr/include/pantheon-files-core/marlin-undostack-manager.h</Path>
             <Path fileType="header">/usr/include/pantheon-files-core/pantheon-files-core.h</Path>
-            <Path fileType="header">/usr/include/pantheon-files-widgets/pantheon-files-widgets.h</Path>
+            <Path fileType="header">/usr/include/pantheon-files-widgets.h</Path>
             <Path fileType="library">/usr/lib64/libpantheon-files-core.so</Path>
             <Path fileType="library">/usr/lib64/libpantheon-files-widgets.so</Path>
             <Path fileType="data">/usr/lib64/pkgconfig/pantheon-files-core.pc</Path>
             <Path fileType="data">/usr/lib64/pkgconfig/pantheon-files-widgets.pc</Path>
-            <Path fileType="data">/usr/share/vala/vapi/pantheon-files-core-C.vapi</Path>
-            <Path fileType="data">/usr/share/vala/vapi/pantheon-files-core.deps</Path>
             <Path fileType="data">/usr/share/vala/vapi/pantheon-files-core.vapi</Path>
-            <Path fileType="data">/usr/share/vala/vapi/pantheon-files-widgets.deps</Path>
             <Path fileType="data">/usr/share/vala/vapi/pantheon-files-widgets.vapi</Path>
         </Files>
     </Package>
     <History>
-        <Update release="8">
-            <Date>2019-01-08</Date>
-            <Version>0.3.5</Version>
+        <Update release="9">
+            <Date>2019-04-20</Date>
+            <Version>4.1.7</Version>
             <Comment>Packaging update</Comment>
-            <Name>Bryan T. Meyers</Name>
-            <Email>bmeyers@datadrake.com</Email>
+            <Name>Joshua Strobl</Name>
+            <Email>joshua@stroblindustries.com</Email>
         </Update>
     </History>
 </PISI>

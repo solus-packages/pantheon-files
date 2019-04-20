@@ -1,8 +1,8 @@
 name       : pantheon-files
-version    : 0.3.5
-release    : 8
+version    : 4.1.7
+release    : 9
 source     :
-    - git|https://github.com/elementary/files.git : 7b7ac1c5222a1eb7b917a1f179008f3357507386
+    - https://github.com/elementary/files/archive/4.1.7.tar.gz : ec773acfe35aaa5315a9a1430822892a960b14f756dc81e16b1a1f242b62bbc0
 license    : GPL-3.0-or-later
 component  : desktop
 summary    : The simple, powerful, and sexy file manager from elementary
@@ -18,9 +18,9 @@ builddeps  :
     - pkgconfig(zeitgeist-2.0)
     - vala
 setup      : |
-    %cmake .
+    %meson_configure -Dwith-unity=false
 build      : |
-    %make
+    %ninja_build
 install    : |
     # install select icons missing from most icon packs
     for i in $pkgfiles/16x16/actions/*; do
@@ -30,4 +30,4 @@ install    : |
         install -Dm 00644 $i $installdir/usr/share/icons/hicolor/24x24/actions/${i##*/}
     done;
 
-    %make_install
+    %ninja_install
