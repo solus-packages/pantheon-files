@@ -145,6 +145,7 @@ libpantheon-files-core.so.4:gof_file_icon_flags_get_type
 libpantheon-files-core.so.4:gof_file_is_desktop_file
 libpantheon-files-core.so.4:gof_file_is_executable
 libpantheon-files-core.so.4:gof_file_is_folder
+libpantheon-files-core.so.4:gof_file_is_image
 libpantheon-files-core.so.4:gof_file_is_mountable
 libpantheon-files-core.so.4:gof_file_is_network_uri_scheme
 libpantheon-files-core.so.4:gof_file_is_other_uri_scheme
@@ -327,7 +328,14 @@ libpantheon-files-core.so.4:marlin_plugins_param_spec_base
 libpantheon-files-core.so.4:marlin_plugins_value_get_base
 libpantheon-files-core.so.4:marlin_plugins_value_set_base
 libpantheon-files-core.so.4:marlin_plugins_value_take_base
+libpantheon-files-core.so.4:marlin_run_simple_dialog_data_copy
+libpantheon-files-core.so.4:marlin_run_simple_dialog_data_destroy
+libpantheon-files-core.so.4:marlin_run_simple_dialog_data_dup
+libpantheon-files-core.so.4:marlin_run_simple_dialog_data_free
+libpantheon-files-core.so.4:marlin_run_simple_dialog_data_get_type
 libpantheon-files-core.so.4:marlin_sidebar_plugin_item_construct
+libpantheon-files-core.so.4:marlin_sidebar_plugin_item_get_action_group
+libpantheon-files-core.so.4:marlin_sidebar_plugin_item_get_action_group_namespace
 libpantheon-files-core.so.4:marlin_sidebar_plugin_item_get_action_icon
 libpantheon-files-core.so.4:marlin_sidebar_plugin_item_get_can_eject
 libpantheon-files-core.so.4:marlin_sidebar_plugin_item_get_cb
@@ -345,6 +353,8 @@ libpantheon-files-core.so.4:marlin_sidebar_plugin_item_get_type
 libpantheon-files-core.so.4:marlin_sidebar_plugin_item_get_uri
 libpantheon-files-core.so.4:marlin_sidebar_plugin_item_get_volume
 libpantheon-files-core.so.4:marlin_sidebar_plugin_item_new
+libpantheon-files-core.so.4:marlin_sidebar_plugin_item_set_action_group
+libpantheon-files-core.so.4:marlin_sidebar_plugin_item_set_action_group_namespace
 libpantheon-files-core.so.4:marlin_sidebar_plugin_item_set_action_icon
 libpantheon-files-core.so.4:marlin_sidebar_plugin_item_set_can_eject
 libpantheon-files-core.so.4:marlin_sidebar_plugin_item_set_cb
@@ -421,7 +431,7 @@ libpantheon-files-core.so.4:pf_connect_server_dialog_get_server_uri
 libpantheon-files-core.so.4:pf_connect_server_dialog_get_type
 libpantheon-files-core.so.4:pf_connect_server_dialog_new
 libpantheon-files-core.so.4:pf_dialogs_display_dialog
-libpantheon-files-core.so.4:pf_dialogs_gtk_message_dialog_set_details_label
+libpantheon-files-core.so.4:pf_dialogs_run_simple_file_operation_dialog
 libpantheon-files-core.so.4:pf_dialogs_show_error_dialog
 libpantheon-files-core.so.4:pf_dialogs_show_warning_dialog
 libpantheon-files-core.so.4:pf_file_utils_can_browse_scheme

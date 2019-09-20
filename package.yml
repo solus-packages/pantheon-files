@@ -1,14 +1,15 @@
 name       : pantheon-files
-version    : 4.1.9
-release    : 10
+version    : 4.2.0
+release    : 11
 source     :
-    - https://github.com/elementary/files/archive/4.1.9.tar.gz : 9948e6476095095f922d723279e974be249dc7ea1d5b4b5f8ea19ac6314a4546
+    - https://github.com/elementary/files/archive/4.2.0.tar.gz : 6151db8279f38abd7a938ea63ea43371148b0e9d9a989351f77ac51c85a10325
 license    : GPL-3.0-or-later
 component  : desktop
 summary    : The simple, powerful, and sexy file manager from elementary
 description: |
     The simple, powerful, and sexy file manager from elementary
 builddeps  :
+    - pkgconfig(cloudproviders)
     - pkgconfig(dbus-glib-1)
     - pkgconfig(gail-3.0)
     - pkgconfig(granite)
@@ -24,10 +25,10 @@ build      : |
 install    : |
     # install select icons missing from most icon packs
     for i in $pkgfiles/16x16/actions/*; do
-        install -Dm 00644 $i $installdir/usr/share/icons/hicolor/16x16/actions/${i##*/}
+        install -Dm00644 $i $installdir/usr/share/icons/hicolor/16x16/actions/${i##*/}
     done;
     for i in $pkgfiles/24x24/actions/*; do
-        install -Dm 00644 $i $installdir/usr/share/icons/hicolor/24x24/actions/${i##*/}
+        install -Dm00644 $i $installdir/usr/share/icons/hicolor/24x24/actions/${i##*/}
     done;
 
     %ninja_install
